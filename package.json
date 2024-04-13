@@ -1,0 +1,36 @@
+{
+  "name": "chewey-bot-api",
+  "version": "0.0.1",
+  "description": "Interact with the Chewey Bot API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chewey-Bot/chewey-bot-api.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "tsc",
+    "generate-docs": "typedoc src/*.ts"
+  },
+  "keywords": [
+    "chewey",
+    "bot",
+    "api",
+    "images"
+  ],
+  "files": [
+    "dist/**"
+  ],
+  "author": "Chewey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chewey-Bot/chewey-bot-api/issues"
+  },
+  "homepage": "https://github.com/Chewey-Bot/chewey-bot-api#readme",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typedoc": "^0.25.13",
+    "typescript": "^5.4.5"
+  }
+}

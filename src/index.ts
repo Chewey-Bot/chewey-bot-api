@@ -64,7 +64,7 @@ export class CheweyBotAPI{
     }
 
     mcLookup(ip: string, port: number, background: CB_MC_BACKGROUND = CB_MC_BACKGROUND.DEFAULT):Promise<String>{
-        if (isNaN(port) || 0 < port || 65535 < port){
+        if (isNaN(port) || port < 0 || 65535 < port){
             return Promise.reject("Invalid Port provided")
         }
         return this.APIGet(`mcap/server/${encodeURIComponent(ip)}/${port}/${background}`).then((res: APIReply) => {

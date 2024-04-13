@@ -2,6 +2,9 @@
 
 This is a handler for the [Chewey Bot API](https://api.chewey-bot.top/).
 
+
+## [Click here for documentation](https://chewey-bot.github.io/chewey-bot-api/)
+
 # Demos
 
 ## Javascript
